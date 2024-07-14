@@ -1,12 +1,8 @@
 import {
   View,
   StyleSheet,
-  Button,
-  Text,
-  TouchableHighlight,
 } from "react-native";
 import CalcVisor from "../components/CalcVisor";
-import { calcPadValues } from "../components/utils/CalcCells";
 import CalcPad from "../components/CalcPad";
 // import { CalcOptions } from "./utils/CalcOptions"
 

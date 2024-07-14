@@ -31,6 +31,8 @@ const styles = StyleSheet.create({
   },
 
   calcRow: {
+    paddingTop: 5,
+    paddingBottom: 15,
     flexDirection: "column",
   },
 

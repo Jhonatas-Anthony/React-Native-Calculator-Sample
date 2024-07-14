@@ -29,8 +29,6 @@ const styles = StyleSheet.create({
   buttonContainer: {
     flexShrink: 1,
     flexGrow: 1,
-    paddingTop: 5,
-    paddingBottom: 15,
     height: "100%",
     width: "25%",
   },
@@ -38,7 +36,7 @@ const styles = StyleSheet.create({
   buttonStandard: {
     flexShrink: 1,
     flexGrow: 1,
-    borderRadius: 100,
+    borderRadius: 15,
     width: "100%",
     height: "100%",
     justifyContent: "space-around",

@@ -1,21 +1,17 @@
-import { View, StyleSheet, Button, Text, TouchableHighlight } from "react-native"
-import { CalcVisor } from "../components/CalcVisor"
+import { View, StyleSheet } from "react-native"
+
 import { calcPadValues } from "../components/utils/CalcCells"
-// import { CalcOptions } from "./utils/CalcOptions"
+import CalcButton from "./CalcButton"
 
 const CalcPad = () => {
     return (
-        <View style={styles.calcRow}>
+        <View style={[styles.flexStandard, styles.calcRow]}>
             {calcPadValues.map((row, index) => {
                 return (
-                    <View key={index} style={styles.calcColumns}>
+                    <View key={index} style={[styles.flexStandard, styles.calcColumns]}>
                         {row.map((cell, index2) => {
                             return (
-                                <TouchableHighlight style={styles.buttonContainer}>
-                                    <View style={styles.button}>
-                                        <Text style={styles.buttonText}>{cell.name}</Text>
-                                    </View>
-                                </TouchableHighlight>
+                                <CalcButton key={index2} cell={cell}></CalcButton>
                             )
                         })}
                     </View>
@@ -28,41 +24,19 @@ const CalcPad = () => {
 export default CalcPad
 
 const styles = StyleSheet.create({
-    container: {
-        backgroundColor: '#fff',
+    flexStandard: {
+        flex: 1,
+        width: '100%',
         height: '100%',
+        justifyContent: 'space-between',
+        gap: 5,
     },
 
     calcRow: {
-        flex: 1,
-        width: '100%',
-        height: '100%',
         flexDirection: 'column',
-        justifyContent: 'space-between',
     },
 
     calcColumns: {
-        flex: 1,
         flexDirection: 'row',
-        width: '100%',
-        height: '100%',
-        justifyContent: 'space-between',
     },
-
-    buttonContainer: {
-        height: '100%',
-        width: '25%',
-    },
-
-    button: {
-        backgroundColor: '#aaa',
-        width: '100%',
-        height: '100%',
-        justifyContent: 'space-around'
-    },
-
-    buttonText: {
-        color: '#fff',
-        textAlign: 'center',
-    }
 });

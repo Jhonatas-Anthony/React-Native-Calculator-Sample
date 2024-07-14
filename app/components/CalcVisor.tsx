@@ -1,30 +1,29 @@
 import { StyleSheet, Text, TextInput, View } from "react-native"
 
-export const CalcVisor = () => {
-
+const CalcVisor = () => {
     return (
         <View style={styles.container}>
             <TextInput
                 style={styles.input}
-                inputMode="numeric"
                 readOnly
             />
         </View>
     )
 }
 
+export default CalcVisor
+
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: '#fff',
-        height: '17%',
+        height: '20%',
     },
     input: {
-        backgroundColor: '#fff',
         width: '100%',
         height: '100%',
         textAlign: 'right',
         fontSize: 30,
         fontWeight: 'bold',
-        borderWidth: 1,
+        borderColor: '#aaa',
+        borderBottomWidth: 1,
     }
 })

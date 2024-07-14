@@ -1,5 +1,5 @@
 import { View, StyleSheet } from "react-native"
-import CalculatorPage from './pages/CalculatorPage';
+import CalculatorPage from './pages/CalculatorPage'
 
 const Main = () => {
     return (

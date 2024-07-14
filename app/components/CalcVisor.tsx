@@ -1,9 +1,10 @@
+import { useState } from "react";
 import { StyleSheet, Text, TextInput, View } from "react-native";
 
 const CalcVisor = () => {
   return (
     <View style={styles.container}>
-      <TextInput style={styles.input} readOnly />
+      <TextInput readOnly style={styles.input}/>
     </View>
   );
 };
@@ -20,7 +21,8 @@ const styles = StyleSheet.create({
     textAlign: "right",
     fontSize: 30,
     fontWeight: "bold",
+    borderRadius: 10,
     borderColor: "#aaa",
-    borderBottomWidth: 1,
+    borderBottomWidth: 3,
   },
 });

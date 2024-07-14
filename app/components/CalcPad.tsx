@@ -1,5 +1,9 @@
+/* 
+Descrição:
+O componente CalcPad vai receber o array de celulas e renderizar o botão correspondente.
+Futuramente vai acontecer aqui a lógica necessária para exportar esses valores.
+*/
 import { View, StyleSheet } from "react-native";
-
 import { calcPadValues } from "../components/utils/CalcCells";
 import CalcButton from "./CalcButton";
 

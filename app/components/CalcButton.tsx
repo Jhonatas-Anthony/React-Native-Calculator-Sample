@@ -1,3 +1,8 @@
+/* 
+Descrição:
+O componente CalcButton foi criado com o intuito de limpar o código no componente CalcPad.tsx
+Aqui ocorre a renderização condicional de alguns estilos e também a definição do botão da calculadora
+*/
 import { Pressable, StyleSheet, Text, View } from "react-native";
 import { type CellType } from "./utils/CalcCells";
 

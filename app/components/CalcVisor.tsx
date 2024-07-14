@@ -1,4 +1,9 @@
-import { StyleSheet, Text, TextInput, View } from "react-native";
+/* 
+Descrição:
+O componente CalcVisor vai receber um valor externo. 
+A lógica necessária para lidar com os cálculos matematicos ainda não foram implementados.
+*/
+import { StyleSheet, TextInput, View } from "react-native";
 
 const CalcVisor = () => {
   return (

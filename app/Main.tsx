@@ -1,3 +1,8 @@
+/* 
+Descricão:
+O arquivo Main.tsx dentro da pasta app serve para lidar com mais de uma páginas (caso ocorra), 
+se for necessário implementar navegações e etc.
+*/
 import { View, StyleSheet } from "react-native";
 import CalculatorPage from "./pages/CalculatorPage";
 

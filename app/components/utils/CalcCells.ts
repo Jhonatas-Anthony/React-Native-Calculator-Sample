@@ -1,3 +1,8 @@
+/* 
+Descrição: 
+Arquivo de utilitários para as celulas da calculadora.
+*/
+
 export type CellType = {
   name: string;
   type: "number" | "operator" | "function";

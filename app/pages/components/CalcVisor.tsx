@@ -8,7 +8,7 @@ import { StyleSheet, TextInput, View } from "react-native";
 const CalcVisor = () => {
   return (
     <View style={styles.container}>
-      <TextInput readOnly style={styles.input}/>
+      <TextInput readOnly style={styles.input} />
     </View>
   );
 };
